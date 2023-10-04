@@ -1,9 +1,80 @@
+
+/* 
+*********
+COMMON
+*********
+*/
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+
+.image, .imageop{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transition: opacity 0.4s ease;
+}
+
+.sustainable-banner, .sustainable-banner-first{
+    font-size: 10px;
+    position: absolute;
+    bottom: 20px;
+    background-color: #1a6f00;
+    color: white;
+    padding: 5px 10px;
+    z-index: 1;
+    font-weight: bold;
+}
+
+/* 
+*********
+TESTI
+*********
+*/
+
+.brand, .fit, .price{
+    margin: 0px;
+}
+.fit{
+    font-size: 15px;
+}
+
+.brand{
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.price{
+    color: #ff5733;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.barred{
+    font-weight: lighter;
+    font-size: 14px;
+    text-decoration:line-through
+}
+
+.image-description {
+    text-align: center; 
+    margin-top: 10px; 
+    font-weight: bold; 
+    color: #333;
+}
+
+/* 
+*********
+MAIN
+*********
+*/
 
 .container-colonne {
     margin: 20px;
@@ -30,70 +101,119 @@ body {
     background-color: #f0f0f0;
     position: relative;
     overflow: hidden;
-    margin: 10px;
+    margin: 0px 10px;
 }
+
 
 .square-img {
     width: 350px;
     height: auto;
-    background-color: #f0f0f0;
     position: relative;
     overflow: hidden;
     margin: 10px;
+    margin-bottom: 40px;
 }
 
 .image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    transition: opacity 0.3s ease;
     opacity: 0;
 }
 
 .imageop{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    transition: opacity 0.7s ease;
     opacity: 1;
 }
 
-.image-description {
-    text-align: center; 
-    margin-top: 10px; 
-    font-weight: bold; 
-    color: #333;
-}
 
 .discount-banner {
-    font-size: 12px;
+    font-size: 10px;
     position: absolute;
     bottom: 20px;
     left: 0;
     background-color: #ff5733; 
+    color: white;
     padding: 5px 10px;
     z-index: 1;
+    font-weight: bold;
+}
+
+.sustainable-banner{
+    left: 55px;
+}
+
+.sustainable-banner-first {
+    left: 0px;
 }
 
 .heart {
-    font-size: 12px;
+    font-size: 20px;
     position: absolute;
     top: 20px;
     right: 0;
     background-color: #ffffff; 
     color: rgb(0, 0, 0);
-    padding: 5px 10px;
+    padding: 10px 10px;
     z-index: 1;
+    transition: font-size 0.5s ease;
 }
 
 
-.square:hover .image1 .image3 .image5 {
+/* 
+*********
+HOVER
+*********
+*/
+
+.heart:hover {
+    font-size: 23px;
+    color: #ff5733;
+}
+
+.square:hover .image1 {
     opacity: 0;
 }
 
-.square:hover .image2 .image4, .image6 {
+.square:hover .image2 {
     opacity: 1;
 }
+
+square:hover .image3 {
+    opacity: 0;
+}
+
+.square:hover .image4 {
+    opacity: 1;
+}
+
+square:hover .image5 {
+    opacity: 0;
+}
+
+.square:hover .image6 {
+    opacity: 1;
+}
+
+.square:hover .image7 {
+    opacity: 0;
+}
+
+.square:hover .image8 {
+    opacity: 1;
+}
+
+.square:hover .image9 {
+    opacity: 0;
+}
+
+.square:hover .image10 {
+    opacity: 1;
+}
+
+.square:hover .image11 {
+    opacity: 0;
+}
+
+.square:hover .image12 {
+    opacity: 1;
+}
+
+
 
